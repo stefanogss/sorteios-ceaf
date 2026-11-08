@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; connect-src 'self' https://script.google.com https://script.googleusercontent.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorteios CEAF</title>
+<meta name="description" content="Sorteio de vagas em cursos de curta duração do CEAF, com registro público e verificação independente.">
+<link rel="preload" href="fontes/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<div class="marcas"><div class="miolo">
+  <img src="logo-ceaf.png" alt="CEAF – Centro de Estudos e Aperfeiçoamento Funcional" data-logo>
+  <img src="logo-mpsc.png" alt="Ministério Público de Santa Catarina" data-logo>
+</div></div>
+<div id="app">
+  <div class="faixa"><div class="miolo"><span class="sigla">Centro de Estudos e Aperfeiçoamento Funcional</span><h1>Sorteio de vagas · cursos de curta duração</h1></div></div>
+  <main class="miolo"><p class="nota">Carregando…</p></main>
+</div>
+<footer class="rodape"><div class="miolo">
+  <strong>Ministério Público de Santa Catarina</strong>
+  <span>Centro de Estudos e Aperfeiçoamento Funcional – CEAF</span>
+  <span><a href="https://www.mpsc.mp.br/" rel="noopener">www.mpsc.mp.br</a></span>
+</div></footer>
+<noscript><p class="miolo">Esta página precisa de JavaScript para conferir os sorteios.</p></noscript>
+<script src="config.js"></script>
+<script src="vendor/qrcode.js"></script>
+<script src="vendor/xlsx.mini.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

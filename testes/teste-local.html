@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sorteios CEAF (teste local)</title>
+<link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+<div class="aviso info" style="border-radius:0;margin:0">Teste local: o servidor é simulado neste navegador e os dados ficam só neste computador. <a href="#" id="zerar-simulador">Apagar os dados de teste</a></div>
+<div id="app"><main class="miolo"><p class="nota">Carregando…</p></main></div>
+<footer class="rodape"><div class="miolo"><strong>Ministério Público de Santa Catarina</strong><span>Centro de Estudos e Aperfeiçoamento Funcional – CEAF</span></div></footer>
+<script>window.SIMULADOR = { persistir: true }; window.SORTEIO_CONFIG = { api: "local" };
+document.getElementById("zerar-simulador").onclick = function (e) { e.preventDefault(); if (confirm("Apagar todos os dados de teste?")) { SIMULADOR.zerar(); localStorage.removeItem("ceaf-sorteio-token"); location.reload(); } };</script>
+<script src="simulador-google.js"></script>
+<script src="../vendor/qrcode.js"></script>
+<script src="../vendor/xlsx.mini.min.js"></script>
+<script src="../app.js"></script>
+</body>
+</html>

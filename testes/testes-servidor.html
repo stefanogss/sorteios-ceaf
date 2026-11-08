@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Testes do servidor (simulado)</title>
+<style>
+body { font: 14px/1.5 ui-monospace, Consolas, monospace; margin: 24px; background: #f1f1f3; color: #121214; }
+ul { list-style: none; padding: 0; }
+.ok { color: #2f6b4f; } .falha { color: #b3261e; font-weight: bold; }
+#resultado { font-size: 18px; margin: 16px 0; }
+pre { background: #fff; padding: 12px; max-height: 20rem; overflow: auto; }
+</style>
+</head>
+<body>
+<h1>Testes do servidor (Apps Script simulado)</h1>
+<p>Roda o <code>apps-script/Codigo.gs</code> com uma planilha simulada em memória. Nada é enviado a lugar nenhum.</p>
+<div id="resultado">Rodando…</div>
+<ul id="saida"></ul>
+<h2>Sorteios gerados (para conferir com verificar_sorteio.py)</h2>
+<pre id="registro"></pre>
+<script>window.SIMULADOR = { persistir: false };</script>
+<script src="simulador-google.js"></script>
+<script src="testes-servidor.js"></script>
+</body>
+</html>
